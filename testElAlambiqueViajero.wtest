@@ -61,4 +61,8 @@ test "luke viaja a hurlingham en el convertible convertido en chatarra" {
   assert.equals("sticker de la Unahur",luke.recuerdo())
   assert.equals(5,chatarra.cañones())
 
-  }
+}
+
+test "test 1" {
+  
+}
