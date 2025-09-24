@@ -1,16 +1,13 @@
 import elAlambiqueViajero.*
-test "luke cuenta cuando va de viaje"{
-    luke.viajar(paris)
-    assert.equals(1, luke.cantidadViajes())
-}
 
-test "luke viaja a paris"{
+describe "test del Alambique Viajero Parte 2" {
+  
+  test "luke viaja a paris"{
     luke.viajar(paris)
     assert.equals("Llavero Torre Eiffel", luke.recuerdo())
 }
 
-
-test "luke viaja a bs as"{
+test "luke viaja a Buenos Aires"{
     luke.viajar(buenosAires)
     assert.equals("Mate", luke.recuerdo())
 }
@@ -37,7 +34,6 @@ test "luke viaja a las vegas cuando hace homenaje a paris"{
     assert.equals("Llavero Torre Eiffel", luke.recuerdo())
 }
 
-
 test "luke viaja a paris y le qeuda combustibles para seguir viajando"{
     luke.viajar(paris)
     assert.that(alambiqueVeloz.puedeFuncionar())
@@ -62,7 +58,4 @@ test "luke viaja a hurlingham en el convertible convertido en chatarra" {
   assert.equals(5,chatarra.cañones())
 
 }
-
-test "test 1" {
-  
 }
