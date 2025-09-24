@@ -15,13 +15,14 @@ object luke {
   method vehiculo(nuevo) {vehiculo = nuevo}
 }
 
+// --Vehiculos--
+
 object alambiqueVeloz {
-  var velocidad = 10
   var combustible = 20
   const consumoPorViaje = 10
   var patente = "AB123JK"
 
-  method velocidad() = velocidad
+  method velocidad() = 10
   method puedeFuncionar() = combustible >= consumoPorViaje
   method desgaste() {
       combustible = combustible - consumoPorViaje
@@ -30,13 +31,10 @@ object alambiqueVeloz {
   method patenteValida() = patente.take(1) == "A"
 }
 
-// --Vehiculos--
-
 object antigualla {
-  var velocidad = 30
   var gangsters = 7
 
-  method velocidad() = velocidad
+  method velocidad() = 30
   method puedeFuncionar() = gangsters.even()
   method rapido() = gangsters > 6
   method desgaste(){
@@ -45,11 +43,10 @@ object antigualla {
   method patenteValida() = chatarra.rapido()
 }
 object chatarra {
-  var velocidad = 5
   var cañones = 10
   var municiones = "ACME"
 
-  method velocidad() = velocidad
+  method velocidad() = 5
   method puedeFuncionar() = municiones == "ACME" and cañones.between(6,12)
   method rapido() = municiones.size() < cañones
   method desgaste(){
@@ -62,10 +59,9 @@ object chatarra {
 }
 
 object convertible {
-  var velocidad = 40
   var convertido = antigualla
 
-  method velocidad() = velocidad
+  method velocidad() = 40
   method puedeFuncionar() = convertido.puedeFuncionar() 
   method rapido() = convertido.rapido()
   method desgaste(){
