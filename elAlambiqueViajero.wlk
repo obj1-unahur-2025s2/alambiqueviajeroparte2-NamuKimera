@@ -40,7 +40,7 @@ object antigualla {
   method puedeFuncionar() = gangsters.even()
   method rapido() = gangsters > 6
   method desgaste(){
-      gangsters = gangsters -1
+    gangsters = gangsters -1
   }
   method patenteValida() = chatarra.rapido()
 }
@@ -78,9 +78,7 @@ object convertible {
 }
 
 object moto {
-  var velocidad = 50
-
-  method velocidad() = velocidad
+  method velocidad() = 50
   method rapido() = true
   method puedeFuncionar() = not self.rapido()
   method desgaste() { }
